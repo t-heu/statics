@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TIC TAC TOE</title>
   <link rel="stylesheet" href="./css/style.css">
-  <!--script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>-->
 </head>
 <body>
   <article class="panel">
@@ -16,9 +14,9 @@
     <form class="caixa">
       <input id="x_campo" type="text" placeholder="name ✕" name="xx" required><input style="margin-bottom: 1em;" id="o_campo" type="text" placeholder="name 〇" name="oo" required> 
     </form> 
-      
+  
       <div>
-        <button type="button" id="play" onclick=" tic_tac_toe.start()">PLAY</button>
+        <button type="button" id="play" onclick=" ticTacToe.start()">PLAY</button>
         
         <select id="change" onchange="update()">
           <option value="1">contra máquina</option>
@@ -40,7 +38,6 @@
     <p id="score_x">✕ - 0</p>
     <p id="score_o">〇 - 0</p>
   </article>
-  
 
   <script src="./js/main.js"></script>
 </body>

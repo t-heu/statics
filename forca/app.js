@@ -43,7 +43,7 @@ const forca = {
       
       for(let i = 0; i < inputs.length; i++) {
         if (letra == inputs[i].value) {
-          erros.innerHTML = "Ja tem letra: <span>" + letra + "<span>";
+          erros.innerHTML = "Já tem letra: <span>" + letra + "<span>";
           return;
         }
       }
@@ -73,12 +73,12 @@ const forca = {
   lost: function() {
     if (this.error == 5) {
       this.error += 1;
-      statement_of_income.innerHTML = "GAME OVER! " + '<span> Palavra: '+ this.word.name +'</span>';
+      statement_of_income.innerHTML = "GAME OVER! Palavra era: " + '<span>'+ this.word.name +'</span>';
       this.restart();
     } else {
       this.error += 1;
     }
-    erros.textContent = "Erros: " + this.error;
+    erros.textContent = "Voçe errou: " + this.error;
   },
   
   winner: function(letter) {
@@ -89,7 +89,7 @@ const forca = {
     }
       
     if (valid) {
-      statement_of_income.textContent = "YOU WON!";
+      statement_of_income.textContent = "YOU WIN!";
       statement_of_income.style.color = "#2ecc71";
       this.restart();
     }

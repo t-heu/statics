@@ -12,7 +12,7 @@ const ticTacToe = {
   board: ['', '', '', '', '', '', '', '', ''],
   symbols: ['〇', '✕', '〇✕'],
   turnIndex: 0,
-  change: function() {
+  change() {
     this.turnIndex = (this.turnIndex === 0 ? 1 : 0);
   },
   sequences: [
@@ -35,7 +35,7 @@ const ticTacToe = {
   select: 2,
   gameNarration: null,
 
-  initialize: function(containerElement, xInput, oInput, narrationElement) {
+  initialize(containerElement, xInput, oInput, narrationElement) {
     this.container = containerElement;
     this.players[0] = oInput.value || this.symbols[0];
     this.players[1] = xInput.value || this.symbols[1];
@@ -44,7 +44,7 @@ const ticTacToe = {
     this.gameOver = true;
   },
   
-  start: function() {
+  start() {
     container.style.display = "grid";
     x_campo.style.display = "none";
     o_campo.style.display = "none";
@@ -64,7 +64,7 @@ const ticTacToe = {
     }
   },
 
-  makePlay: function(position) {
+  makePlay(position) {
     if (this.gameOver) return;
     if (this.board[position] !== '') return;
 
@@ -91,7 +91,7 @@ const ticTacToe = {
     }
   },
 
-  draw: function() {
+  draw() {
     let content = '';
 
     for (let i = 0; i < this.board.length; i++) {
@@ -106,7 +106,7 @@ const ticTacToe = {
     this.container.innerHTML = content;
   },
 
-  checkDraw: function() {
+  checkDraw() {
     for (let i in this.board) {
       if (this.board[i] === '')
         return false;
@@ -114,7 +114,7 @@ const ticTacToe = {
     return true;
   },
 
-  checkWinningSequences: function(symbol) {
+  checkWinningSequences(symbol) {
     for (let i in this.sequences) {
       if (this.board[this.sequences[i][0]] === symbol && this.board[this.sequences[i][1]] === symbol && this.board[this.sequences[i][2]] === symbol) {
         return true;
@@ -123,7 +123,7 @@ const ticTacToe = {
     return false;
   },
 
-  stylizeWinnerSequence: function(index) {
+  stylizeWinnerSequence(index) {
     if (index === 2) {
       winningSymbol.innerHTML = `<span class='xx'>${this.symbols[1]}</span><span class='oo'>${this.symbols[0]}</span>`;
     }
@@ -143,11 +143,11 @@ const ticTacToe = {
     winningText.innerText = (index === 2 ? "OLD!" : "WIN!");
   },
   
-  setNarrationText: function() {
+  setNarrationText() {
     this.gameNarration.innerText = `${this.turnIndex === 1 ? this.players[1] : this.players[0]} turn`;
   },
 
-  game_is_over: function() {
+  game_is_over() {
     this.gameOver = true;
     this.gameNarration.innerText = 'game over';
     play.innerText = "Jogar novamente?";
@@ -159,7 +159,7 @@ const ticTacToe = {
     }, 1000);
   },
 
-  machine: function() {
+  machine() {
     if (this.machineStrategicMove(this.symbols[this.turnIndex]) > -1) {
       this.makePlay(this.machineStrategicMove(this.symbols[this.turnIndex]));
     } else if (this.machineStrategicMove(this.symbols[this.turnIndex === 0 ? 1 : 0]) > -1) {
@@ -169,7 +169,7 @@ const ticTacToe = {
     }
   },
 
-  machineStrategicMove: function(symbol) {
+  machineStrategicMove(symbol) {
     let score;
     for (let i = 0; i < this.sequences.length; i++) {
       score = 0;
@@ -195,7 +195,7 @@ const ticTacToe = {
     return -1;
   },
 
-  machineRandomMove: function() {
+  machineRandomMove() {
     let position;
     do {
       position = Math.floor(Math.random() * 8);

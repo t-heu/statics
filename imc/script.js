@@ -37,7 +37,7 @@ function sendImc(text, color) {
   
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  imc = kg.value / (Math.pow(m.value, 2));
+  imc = kg_input.value / (Math.pow(height_input.value, 2));
   result.value = Number(imc.toFixed(2));
     
   function setProgress(percent) {

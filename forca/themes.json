@@ -2,67 +2,549 @@
   "themes": {
     "fruits": [
       {
-        "name": "KIWI",
-        "dica": "bbbbb"
+        "name": "ABACAXI",
+        "dica": "Fruta tropical de sabor ácido e refrescante"
       },
       {
-        "name": "AÇAÍ",
-        "dica": "aaaaa"
+        "name": "BANANA",
+        "dica": "Fruta amarela, alongada e de sabor adocicado"
+      },
+      {
+        "name": "CEREJA",
+        "dica": "Fruta pequena, vermelha e doce, geralmente utilizada em sobremesas"
+      },
+      {
+        "name": "MORANGO",
+        "dica": "Fruta vermelha, suculenta e saborosa, com sementes na superfície"
+      },
+      {
+        "name": "UVA",
+        "dica": "Fruta arredondada, geralmente roxa ou verde, utilizada para fazer sucos e vinhos"
+      },
+      {
+        "name": "LARANJA",
+        "dica": "Fruta cítrica de cor alaranjada, rica em vitamina C"
+      },
+      {
+        "name": "MAÇA",
+        "dica": "Fruta redonda, geralmente vermelha ou verde, com sabor adocicado"
+      },
+      {
+        "name": "PÊRA",
+        "dica": "Fruta suculenta de forma alongada, geralmente amarela ou verde"
+      },
+      {
+        "name": "KIWI",
+        "dica": "Fruta verde e pequena, com sabor único e textura peluda"
+      },
+      {
+        "name": "ABACATE",
+        "dica": "Fruta verde, com polpa cremosa e sabor característico"
+      },
+      {
+        "name": "MANGA",
+        "dica": "Fruta tropical de polpa suculenta, geralmente amarela ou alaranjada"
+      },
+      {
+        "name": "PITAYA",
+        "dica": "Fruta exótica de casca rosa e polpa branca ou vermelha, com sabor delicado"
+      },
+      {
+        "name": "CAJU",
+        "dica": "Fruta tropical, comum em países como o Brasil, de sabor agridoce e suco refrescante"
+      },
+      {
+        "name": "GOIABA",
+        "dica": "Fruta de casca verde ou amarela, com polpa doce e aroma característico"
+      },
+      {
+        "name": "JACA",
+        "dica": "Fruta grande, de casca espinhosa e polpa suculenta, com sabor adocicado"
+      },
+      {
+        "name": "MARACUJÁ",
+        "dica": "Fruta de casca dura e polpa com sementes, com sabor agridoce e aroma intenso"
+      },
+      {
+        "name": "AMORA",
+        "dica": "Fruta pequena e escura, com sabor doce e levemente ácido"
+      },
+      {
+        "name": "CAQUI",
+        "dica": "Fruta de casca fina e polpa adocicada, geralmente alaranjada ou avermelhada"
+      },
+      {
+        "name": "COCO",
+        "dica": "Fruto com casca dura e polpa branca ou amarelada, rico em água e nutrientes"
+      },
+      {
+        "name": "FIGO",
+        "dica": "Fruta pequena e doce, com casca fina e polpa macia, geralmente roxa ou verde"
+      },
+      {
+        "name": "GRUMIXAMA",
+        "dica": "Fruta brasileira, pequena e escura, com sabor doce e levemente ácido"
+      },
+      {
+        "name": "LIMA",
+        "dica": "Fruta cítrica, similar ao limão, geralmente utilizada para fazer sucos e temperos"
+      },
+      {
+        "name": "NECTARINA",
+        "dica": "Fruta similar ao pêssego, porém com casca lisa e sabor mais intenso"
+      },
+      {
+        "name": "TANGERINA",
+        "dica": "Variedade de laranja de casca fina, fácil de descascar, com sabor adocicado"
+      },
+      {
+        "name": "CAQUI",
+        "dica": "Fruta de casca fina e polpa adocicada, geralmente alaranjada ou avermelhada"
       }
-    ],
-    "aa": [
-      "BANANA",
-      "LARANJA",
-      "GOIABA",
-      "UVA",
-      "ABACATE",
-      "GUARANÁ",
-      "ABACAXI",
-      "MORANGO",
-      "MELANCIA",
-      "CEREJA",
-      "FRAMBOESA",
-      "LIMA",
-      "TANGERINA",
-      "COCO",
-      "AMEIXA",
-      "ACEROLA",
-      "AMORA",
-      "AZEITONA",
-      "CACAU",
-      "GRAVIOLA",
-      "JACA",
-      "MANGA",
-      "MURICI",
-      "PINHA",
-      "PITANGA",
-      "PISTACHE",
-      "QUINA",
-      "SERIGUELA",
-      "TOMATE",
-      "TORANJA",
-      "UMBU",
-      "DAMASCO",
-      "FIGO",
-      "POMELO",
-      "CAJU",
-      "CIRIGUELA",
-      "CRANBERRY"
     ],
     "food": [
       {
-        "name": "QUEIJO",
-        "dica": ""
+        "name": "PIZZA",
+        "dica": "Prato italiano popular, consistindo em uma base de massa coberta com molho de tomate, queijo e uma variedade de ingredientes"
       },
-      "CARNE","OVO","BACON","PIZZA","LASANHA","ESTROGONOFE","SARDINHA","COXINHA","PASTEL","EMPADA","FRANGO","FEIJOADA","CUSCUZ","CHOCOLATE","ARROZ","PANQUECA","SORVETE","LEITE","PRESUNTO","QUIBE"
+      {
+        "name": "HAMBÚRGUER",
+        "dica": "Sanduíche feito com carne moída, geralmente servido em um pão redondo com diversos acompanhamentos"
+      },
+      {
+        "name": "LASANHA",
+        "dica": "Prato de massa em camadas, intercaladas com molho de tomate, queijo e carne"
+      },
+      {
+        "name": "SUSHI",
+        "dica": "Prato japonês composto por arroz temperado com vinagre, combinado com peixe cru ou frutos do mar, e envolto em alga marinha"
+      },
+      {
+        "name": "CHOCOLATE",
+        "dica": "Doce feito a partir do cacau, geralmente na forma de barras, bombons ou coberturas"
+      },
+      {
+        "name": "SALADA",
+        "dica": "Prato composto por uma mistura de vegetais crus, geralmente servidos com molhos"
+      },
+      {
+        "name": "ESPAGUETE",
+        "dica": "Tipo de massa longa e fina, frequentemente servida com molho de tomate e queijo ralado"
+      },
+      {
+        "name": "CHURRASCO",
+        "dica": "Método de cozimento de carne sobre uma grelha ou espeto, popular em diversas culturas"
+      },
+      {
+        "name": "BATATA-FRITA",
+        "dica": "Rodelas de batata fritas em óleo, servidas como acompanhamento ou petisco"
+      },
+      {
+        "name": "SOPA",
+        "dica": "Prato líquido preparado com legumes, carne, peixe ou outros ingredientes, frequentemente servido quente"
+      },
+      {
+        "name": "PASTEL",
+        "dica": "Salgado recheado com diversos ingredientes, como carne, queijo, frango, palmito, entre outros, e frito em óleo"
+      },
+      {
+        "name": "TORTA",
+        "dica": "Prato doce ou salgado preparado com uma base de massa e um recheio variado, geralmente assado no forno"
+      },
+      {
+        "name": "BISCOITO",
+        "dica": "Pequeno doce assado, geralmente feito de farinha, açúcar e gordura"
+      },
+      {
+        "name": "CREME BRÛLÉE",
+        "dica": "Sobremesa francesa composta por uma camada de creme de baunilha coberta com uma fina camada de açúcar caramelizado"
+      },
+      {
+        "name": "EMPADA",
+        "dica": "Salgado individual, composto por uma massa em forma de cesto recheada com uma variedade de ingredientes, geralmente assado no forno"
+      },
+      {
+        "name": "PAELLA",
+        "dica": "Prato espanhol de arroz, preparado com uma variedade de frutos do mar, carne, legumes e temperos"
+      },
+      {
+        "name": "PÃO DE QUEIJO",
+        "dica": "Salgado típico da culinária brasileira, feito com massa de polvilho e queijo, assado no forno"
+      },
+      {
+        "name": "YAKISOBA",
+        "dica": "Prato japonês de macarrão frito, geralmente preparado com legumes, carne e molho de soja"
+      },
+      {
+        "name": "COXINHA",
+        "dica": "Salgado brasileiro em formato de coxa de frango, recheado com uma massa de batata e frango desfiado, empanado e frito em óleo"
+      },
+      {
+        "name": "SASHIMI",
+        "dica": "Prato japonês de peixe cru, geralmente fatiado e servido com molho de soja e wasabi"
+      },
+      {
+        "name": "MOQUECA",
+        "dica": "Prato brasileiro de peixe ou frutos do mar cozidos em um molho com leite de coco, azeite de dendê, tomate, cebola, pimentões e temperos"
+      },
+      {
+        "name": "TIRAMISU",
+        "dica": "Sobremesa italiana composta por camadas de biscoitos embebidos em café, intercaladas com um creme de queijo mascarpone"
+      },
+      {
+        "name": "SUSHI",
+        "dica": "Prato japonês composto por arroz temperado com vinagre, combinado com peixe cru ou frutos do mar, e envolto em alga marinha"
+      },
+      {
+        "name": "RISOTO",
+        "dica": "Prato italiano de arroz cozido lentamente em caldo, geralmente servido com queijo e outros ingredientes"
+      },
+      {
+        "name": "KEBAB",
+        "dica": "Prato árabe de carne assada em espeto, geralmente servido com vegetais e molhos em um pão ou no prato"
+      },
+      {
+        "name": "ESFIHA",
+        "dica": "Salgado de origem árabe, em forma de disco ou triângulo, recheado com carne, queijo, frango ou vegetais, e assado no forno"
+      },
+      {
+        "name": "PIPA",
+        "dica": "Doce brasileiro de origem portuguesa, feito com uma massa frita e polvilhada com açúcar e canela"
+      },
+      {
+        "name": "CAIPIRINHA",
+        "dica": "Coquetel brasileiro feito com cachaça, limão, açúcar e gelo"
+      },
+      {
+        "name": "PÃO",
+        "dica": "Alimento básico feito com farinha, água, sal e fermento, assado no forno"
+      }
     ],
     "animals": [
       {
-        "name": "GALINHA",
-        "dica": ""
+        "name": "LEÃO",
+        "dica": "Grande felino conhecido por sua juba"
       },
-      "GATO","PACA","ELEFANTE","PORCO","RATO","BEIJA-FLOR","URSO","GOLFINHO","CABRA","ZEBRA","GIRAFA","CAVALO","CORUJA","PELICANO","PANTERA","PINGUIM","RINOCERONTE","OVELHA","ESQUILO","CAMELO","LHAMA","PEIXE","MACACO","GORILA","MORCEGO","TATU","TARTARUGA","JABUTI","AVESTRUZ","COELHO","TIGRE","TUCANO","CANGURU","SAPO","URUBU","BALEIA","ALCE"
+      {
+        "name": "ELEFANTE",
+        "dica": "Maior mamífero terrestre, caracterizado por sua tromba"
+      },
+      {
+        "name": "GIRASSOL",
+        "dica": "Planta comum em jardins, que acompanha a trajetória do sol"
+      },
+      {
+        "name": "CACHORRO",
+        "dica": "Animal doméstico conhecido por sua lealdade"
+      },
+      {
+        "name": "GATO",
+        "dica": "Animal doméstico de estimação, conhecido por sua independência"
+      },
+      {
+        "name": "TIGRE",
+        "dica": "Grande felino listrado, encontrado em diversas regiões da Ásia"
+      },
+      {
+        "name": "URSO",
+        "dica": "Animal mamífero, conhecido por sua pelagem espessa e habilidade de hibernar"
+      },
+      {
+        "name": "SERPENTE",
+        "dica": "Réptil alongado, muitas vezes associado a veneno e estrangulamento"
+      },
+      {
+        "name": "MACACO",
+        "dica": "Primate conhecido por sua agilidade e comportamento social"
+      },
+      {
+        "name": "COBRA",
+        "dica": "Réptil venenoso, geralmente caracterizado por seu padrão de cores e movimentos rápidos"
+      },
+      {
+        "name": "CAMELO",
+        "dica": "Animal adaptado para viver em ambientes áridos, com uma ou duas corcovas"
+      },
+      {
+        "name": "CROCODILO",
+        "dica": "Réptil semelhante a um lagarto, com mandíbulas poderosas e adaptado para viver em ambientes aquáticos"
+      },
+      {
+        "name": "PATO",
+        "dica": "Ave aquática comum em lagos e rios, conhecida por sua vocalização característica"
+      },
+      {
+        "name": "PÁSSARO",
+        "dica": "Animal vertebrado de sangue quente, caracterizado por possuir penas e asas"
+      },
+      {
+        "name": "RATO",
+        "dica": "Pequeno mamífero roedor, comum em áreas urbanas e rurais"
+      },
+      {
+        "name": "ZEBRA",
+        "dica": "Animal selvagem da família dos equídeos, conhecido por suas listras"
+      },
+      {
+        "name": "GALINHA",
+        "dica": "Ave doméstica comum em criações agrícolas, conhecida por botar ovos"
+      },
+      {
+        "name": "ABELHA",
+        "dica": "Inseto conhecido por sua importância na polinização das plantas"
+      },
+      {
+        "name": "BODE",
+        "dica": "Animal ruminante comum em criações agrícolas, conhecido por seu leite e carne"
+      },
+      {
+        "name": "PANDA",
+        "dica": "Ursídeo conhecido por sua pelagem branca e preta, nativo da China"
+      },
+      {
+        "name": "GAZELA",
+        "dica": "Antílope ágil, conhecido por seus saltos graciosos"
+      },
+      {
+        "name": "ELEFANTE-MARINHO",
+        "dica": "Mamífero marinho, conhecido por sua enorme probóscide e suas habilidades de mergulho"
+      },
+      {
+        "name": "PUMA",
+        "dica": "Felino selvagem também conhecido como onça-parda ou suçuarana"
+      },
+      {
+        "name": "COALA",
+        "dica": "Marsupial arbóreo nativo da Austrália, conhecido por se alimentar principalmente de folhas de eucalipto"
+      },
+      {
+        "name": "ARA",
+        "dica": "Ave psitaciforme de cores vibrantes, conhecida por sua inteligência e capacidade de imitar sons"
+      },
+      {
+        "name": "ORANGOTANGO",
+        "dica": "Primate conhecido por sua inteligência e semelhança com os seres humanos, nativo das florestas tropicais do Sudeste Asiático"
+      },
+      {
+        "name": "GALO",
+        "dica": "Macho da galinha, conhecido por seu canto matinal"
+      },
+      {
+        "name": "PEIXE-ESPADA",
+        "dica": "Peixe marinho conhecido por sua longa mandíbula, semelhante a uma espada"
+      },
+      {
+        "name": "PANDA-VERMELHO",
+        "dica": "Pequeno mamífero nativo do Himalaia, conhecido por sua pelagem avermelhada e sua semelhança com o panda gigante"
+      },
+      {
+        "name": "IGUANA",
+        "dica": "Réptil de grande porte, comum em regiões tropicais, conhecido por sua coloração verde e hábitos arborícolas"
+      }
     ],
-    "random": ["PREFEITO","MURAL","PACIFICA","ARMAS","INÍCIO","GUARDA-CHUVA","TERMOSTATO","GUARDA-ROUPA","JARRO","BINGO","ESTRELA CADENTE","REGRAS","TRANSPORTE","RODA-GIGANTE","AMANHECER","EMPRESA","EMPREGO","TRABALHO","VIDA","RÁDIO","MINHA","ANO-LUZ","COUVE-FLOR","SINAL","ASTRONOMIA","ASTRONAUTA","ANCHOVA","MONTANHA-RUSSA"]
+    "random": [
+      {
+        "name": "ARCO-ÍRIS",
+        "dica": "Fenômeno óptico e meteorológico que causa uma exibição colorida no céu após a chuva"
+      },
+      {
+        "name": "VIOLINO",
+        "dica": "Instrumento musical de cordas, tocado com um arco"
+      },
+      {
+        "name": "TELESCÓPIO",
+        "dica": "Instrumento óptico que permite a observação de objetos distantes no espaço"
+      },
+      {
+        "name": "BICICLETA",
+        "dica": "Veículo de duas rodas movido pelo impulso dos pedais"
+      },
+      {
+        "name": "BALÃO",
+        "dica": "Objeto inflável que sobe no ar quando cheio de gás mais leve que o ar"
+      },
+      {
+        "name": "CACHOEIRA",
+        "dica": "Queda d'água natural, geralmente em um rio ou riacho"
+      },
+      {
+        "name": "SACOLA",
+        "dica": "Bolsa de tecido ou plástico usada para transportar objetos"
+      },
+      {
+        "name": "VULCÃO",
+        "dica": "Abertura na crosta terrestre por onde lava, cinzas e gases são expelidos"
+      },
+      {
+        "name": "BOLSA",
+        "dica": "Pequena bolsa usada para carregar objetos pessoais, geralmente feita de tecido ou couro"
+      },
+      {
+        "name": "CRUZEIRO",
+        "dica": "Viagem de lazer em um navio de cruzeiro, geralmente para destinos turísticos"
+      },
+      {
+        "name": "NUVEM",
+        "dica": "Massa de gotículas de água ou cristais de gelo suspensos na atmosfera"
+      },
+      {
+        "name": "GALÁXIA",
+        "dica": "Grande sistema de estrelas, gás e poeira ligados pela gravidade"
+      },
+      {
+        "name": "DADO",
+        "dica": "Objeto cúbico usado em jogos de azar e de estratégia"
+      },
+      {
+        "name": "ALICATE",
+        "dica": "Ferramenta manual com duas alavancas usada para segurar, dobrar ou cortar objetos"
+      },
+      {
+        "name": "BINÓCULOS",
+        "dica": "Instrumento óptico que permite a visualização ampliada de objetos distantes"
+      },
+      {
+        "name": "QUADRADO",
+        "dica": "Figura geométrica com quatro lados de igual comprimento e quatro ângulos retos"
+      },
+      {
+        "name": "CANETA",
+        "dica": "Instrumento de escrita composto por um tubo de tinta e uma ponta metálica ou plástica"
+      },
+      {
+        "name": "CARACOL",
+        "dica": "Molusco terrestre de concha espiralada, geralmente encontrado em ambientes úmidos"
+      },
+      {
+        "name": "CELULAR",
+        "dica": "Dispositivo eletrônico portátil usado para comunicação, acesso à internet e outras funções"
+      },
+      {
+        "name": "PLATÔ",
+        "dica": "Planalto ou área elevada de terreno plano, geralmente cercada por encostas íngremes"
+      },
+      {
+        "name": "PLANETA",
+        "dica": "Corpo celeste que orbita uma estrela, como a Terra, Marte ou Júpiter"
+      },
+      {
+        "name": "BÚSSOLA",
+        "dica": "Instrumento de navegação que indica a direção magnética"
+      },
+      {
+        "name": "MÚSICA",
+        "dica": "Forma de arte que combina sons harmoniosos em sequência organizada"
+      },
+      {
+        "name": "REFRIGERANTE",
+        "dica": "Bebida gaseificada, geralmente doce e com sabor de frutas ou outros aromas"
+      },
+      {
+        "name": "TUBARÃO",
+        "dica": "Grande peixe cartilaginoso marinho, conhecido por sua forma aerodinâmica e dentes afiados"
+      },
+      {
+        "name": "PLÁTANO",
+        "dica": "Fruta alongada, de casca amarela, consumida crua ou cozida"
+      },
+      {
+        "name": "HORÓSCOPO",
+        "dica": "Sistema de previsão baseado na posição dos astros, usado em algumas tradições para determinar características pessoais e eventos futuros"
+      },
+      {
+        "name": "CACHIMBO",
+        "dica": "Dispositivo utilizado para fumar tabaco, composto por uma câmara de combustão e um tubo"
+      },
+      {
+        "name": "MOCHILA",
+        "dica": "Saco feito de tecido resistente, usado para transportar objetos nas costas"
+      },
+      {
+        "name": "CACTO",
+        "dica": "Planta suculenta, comumente encontrada em regiões áridas, conhecida por suas espinhas"
+      }
+    ],
+    "mark_car": [
+      {
+        "name": "FERRARI",
+        "dica": "Marca italiana de carros esportivos de luxo"
+      },
+      {
+        "name": "MERCEDES",
+        "dica": "Marca alemã de carros de luxo, conhecida pela qualidade e inovação"
+      },
+      {
+        "name": "PORSCHE",
+        "dica": "Marca alemã de carros esportivos, conhecida por seu design icônico"
+      },
+      {
+        "name": "FORD",
+        "dica": "Marca americana de carros, uma das mais antigas e renomadas do mundo"
+      },
+      {
+        "name": "CHEVROLET",
+        "dica": "Marca americana de carros, conhecida por uma ampla gama de modelos"
+      },
+      {
+        "name": "TOYOTA",
+        "dica": "Marca japonesa de carros, conhecida pela confiabilidade e eficiência"
+      },
+      {
+        "name": "HONDA",
+        "dica": "Marca japonesa de carros e motocicletas, reconhecida pela qualidade e inovação"
+      },
+      {
+        "name": "BMW",
+        "dica": "Marca alemã de carros de luxo e motocicletas, conhecida pelo desempenho e design elegante"
+      },
+      {
+        "name": "AUDI",
+        "dica": "Marca alemã de carros de luxo, reconhecida pelo design sofisticado e tecnologia avançada"
+      },
+      {
+        "name": "NISSAN",
+        "dica": "Marca japonesa de carros, conhecida por uma ampla gama de veículos"
+      },
+      {
+        "name": "VOLKSWAGEN",
+        "dica": "Marca alemã de carros, uma das maiores fabricantes do mundo"
+      },
+      {
+        "name": "JEEP",
+        "dica": "Marca americana de veículos todo-terreno, conhecida pela robustez e capacidade off-road"
+      },
+      {
+        "name": "RENAULT",
+        "dica": "Marca francesa de carros, uma das mais antigas e influentes do mundo"
+      },
+      {
+        "name": "HYUNDAI",
+        "dica": "Marca sul-coreana de carros, conhecida pela variedade de modelos e boa relação custo-benefício"
+      },
+      {
+        "name": "SUBARU",
+        "dica": "Marca japonesa de carros, conhecida por seus veículos tração integral e durabilidade"
+      },
+      {
+        "name": "MASERATI",
+        "dica": "Marca italiana de carros esportivos de luxo, conhecida pelo desempenho e elegância"
+      },
+      {
+        "name": "ALFA ROMEO",
+        "dica": "Marca italiana de carros esportivos e de luxo, conhecida por seu design elegante e desempenho emocionante"
+      },
+      {
+        "name": "LAMBORGHINI",
+        "dica": "Marca italiana de carros esportivos de luxo, conhecida por sua velocidade e design arrojado"
+      },
+      {
+        "name": "MAZDA",
+        "dica": "Marca japonesa de carros, reconhecida pela inovação e design dinâmico"
+      },
+      {
+        "name": "ASTON MARTIN",
+        "dica": "Marca britânica de carros esportivos de luxo, conhecida por sua elegância e desempenho"
+      }
+    ]
   }
 }

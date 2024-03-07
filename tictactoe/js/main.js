@@ -85,33 +85,30 @@ const ticTacToe = {
     
     this.change();
     this.setNarrationText();
+    
     if (this.select === 1 && this.turnIndex === 1) {
-      console.log("a")
       this.machine();
     }
   },
 
   draw() {
     let content = '';
-
+    
     for (let i = 0; i < this.board.length; i++) {
       const classe = this.board[i] === this.symbols[0]
     
       content += `
         <div onclick="ticTacToe.makePlay(${i})">
           <span class=${classe ? "oo" : "xx"}>${this.board[i]}</span>
-        </div>`;
+        </div>
+      `;
     }
 
     this.container.innerHTML = content;
   },
-
+  
   checkDraw() {
-    for (let i in this.board) {
-      if (this.board[i] === '')
-        return false;
-    }
-    return true;
+    return this.board.every(cell => cell !== '');
   },
 
   checkWinningSequences(symbol) {
@@ -124,23 +121,20 @@ const ticTacToe = {
   },
 
   stylizeWinnerSequence(index) {
+    const winnerSymbol = this.symbols[index];
+    
     if (index === 2) {
       winningSymbol.innerHTML = `<span class='xx'>${this.symbols[1]}</span><span class='oo'>${this.symbols[0]}</span>`;
+      winningText.innerText = "OLD!";
+    } else {
+      const scoreElement = index === 0 ? score_o : score_x;
+      const winnerSymbolClass = index === 0 ? 'oo' : 'xx';
+      
+      scoreElement.innerHTML = `${winnerSymbol} - ${index === 0 ? this.score.score_o +=1 : this.score.score_x +=1}`;
+      
+      winningSymbol.innerHTML = `<span class="${winnerSymbolClass}">${winnerSymbol}</span>`;
+      winningText.innerText = "WIN!";
     }
-    
-    if (index === 0) {
-      this.score.score_o +=1;
-      score_o.innerHTML = `${this.symbols[index]} - ${this.score.score_o}`;
-      winningSymbol.innerHTML = `<span class="oo">${this.symbols[index]}</span>`;
-    }
-    
-    if (index === 1) {
-      this.score.score_x = +1;
-      score_x.innerHTML = `${this.symbols[index]} - ${this.score.score_x}`;
-      winningSymbol.innerHTML = `<span class="xx">${this.symbols[index]}</span>`;
-    }
-    
-    winningText.innerText = (index === 2 ? "OLD!" : "WIN!");
   },
   
   setNarrationText() {
@@ -160,54 +154,57 @@ const ticTacToe = {
   },
 
   machine() {
-    if (this.machineStrategicMove(this.symbols[this.turnIndex]) > -1) {
-      this.makePlay(this.machineStrategicMove(this.symbols[this.turnIndex]));
-    } else if (this.machineStrategicMove(this.symbols[this.turnIndex === 0 ? 1 : 0]) > -1) {
-      this.makePlay(this.machineStrategicMove(this.symbols[this.turnIndex === 0 ? 1 : 0]));
-    } else {
-      this.makePlay(this.machineRandomMove());
+    const currentPlayerSymbol = this.symbols[this.turnIndex];
+    const opponentSymbol = this.symbols[this.turnIndex === 0 ? 1 : 0];
+    
+    let move = this.machineStrategicMove(currentPlayerSymbol);
+    if (move === -1) {
+      move = this.machineStrategicMove(opponentSymbol);
     }
+    if (move === -1) {
+      move = this.machineRandomMove();
+    }
+    this.makePlay(move);
   },
 
   machineStrategicMove(symbol) {
-    let score;
     for (let i = 0; i < this.sequences.length; i++) {
-      score = 0;
-      if (this.board[this.sequences[i][0]] === symbol)
-        score++;
-      if (this.board[this.sequences[i][1]] === symbol)
-        score++;
-      if (this.board[this.sequences[i][2]] === symbol)
-        score++;
-
-      if (score === 2) {
-        if (this.board[this.sequences[i][0]] === '') {
-          return this.sequences[i][0];
+      let score = 0;
+      let emptyPosition = -1;
+    
+      for (let j = 0; j < 3; j++) {
+        const position = this.sequences[i][j];
+        if (this.board[position] === symbol) {
+          score++;
+        } else if (this.board[position] === '') {
+          emptyPosition = position;
         }
-        if (this.board[this.sequences[i][1]] === '') {
-          return this.sequences[i][1];
-        }
-        if (this.board[this.sequences[i][2]] === '') {
-          return this.sequences[i][2];
-        }
+      }
+    
+      if (score === 2 && emptyPosition !== -1) {
+        return emptyPosition;
       }
     }
     return -1;
   },
 
   machineRandomMove() {
-    let position;
-    do {
-      position = Math.floor(Math.random() * 8);
-    } while (this.board[position] !== '');
-    return position;
+    let emptyPositions = [];
+    for (let i = 0; i < this.board.length; i++) {
+      if (this.board[i] === '') {
+        emptyPositions.push(i);
+      }
+    }
+    return emptyPositions[Math.floor(Math.random() * emptyPositions.length)];
   },
 }
 
 function update() {
-  if (document.getElementById('change').value == 1) {
+  const optionSelect = document.getElementById('change').value;
+  
+  if (optionSelect == 1) {
     ticTacToe.select = 1;
-  } else if(document.getElementById('change').value == 3) {
+  } else if(optionSelect == 3) {
     ticTacToe.select = 3
   } else {
     ticTacToe.select = 2;
